@@ -32,6 +32,6 @@ app.get("/", requireAuth, (req, res) => {
     res.send(`your email: ${req.user.email}`);
 });
 
-app.listen(5000, () => {
-    console.log("server is running");
-});
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log("server started"));
