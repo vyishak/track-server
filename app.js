@@ -8,7 +8,7 @@ const authRoutes = require('./routes/authRoutes');
 const trackRoutes = require('./routes/trackRoutes');
 const requireAuth = require('./middlewares/requireAuth');
 
-const mongoUri = "mongodb+srv://shock:bond1234@developer-wt5tl.mongodb.net/test?retryWrites=true&w=majority"
+const mongoUri = "mongodb+srv://tester:test123@cluster0.jcsjl.mongodb.net/tester?retryWrites=true&w=majority";
 
 app.use(bodyParser.json());
 app.use(authRoutes);
